@@ -201,6 +201,9 @@ def player_stats (name)
     if key == :player
     else 
       final_hash[key]=value
+    end
+  }
+  return final_hash
 end
     
     
