@@ -186,9 +186,9 @@ def player_numbers (name)
 end
 
 def player_stats (name)
+  right_player = {}
   game_hash.each {|key, value|
     counter = 0 
-    right_player = {}
     while value[:players][counter] do
       if value[:players][counter][:player] == name
         right_player = value[:players][counter]
