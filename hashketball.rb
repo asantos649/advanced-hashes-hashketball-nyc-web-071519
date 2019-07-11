@@ -188,13 +188,19 @@ end
 def player_stats (name)
   game_hash.each {|key, value|
     counter = 0 
+    player = {}
     while value[:players][counter] do
       if value[:players][counter][:player] == name
-        return value[:players][counter]
+        player = value[:players][counter]
       end 
       counter += 1
     end
   }
+  final_hash = {}
+  player.each {|key,value|
+    if key == :player
+    else 
+      final_hash[key]=value
 end
     
     
